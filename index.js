@@ -2,6 +2,9 @@ const express = require("express");
 var app = express();
 const path = require("path");
 
+app.use('/img/', express.static('./img'));
+
+
 app.set('view engine', 'ejs')
 port = process.env.port || '9001';
 

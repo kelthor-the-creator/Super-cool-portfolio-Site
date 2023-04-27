@@ -17,9 +17,52 @@ body{
 
 .hero-text {
     width: 100%;
-    padding:60px 0;
+    padding:20vw ;
     text-align: center;
     background: #191B1D;
     color: #FF8324;
   }
-  
+
+
+  .navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: #1a1a1a;
+}
+
+.link-group{
+    list-style: none;
+    display: flex;
+}
+
+.link a{
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    margin: 0 20px;
+    line-height: 80px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.link a:hover, .link.active a{
+    opacity: 1;
+}
+
+.hero-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 65vh;
+    width: 35%;
+    object-fit: cover;
+    opacity: 0.2;
+}
